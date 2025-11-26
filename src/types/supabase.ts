@@ -16,25 +16,69 @@ export type Database = {
     Tables: {
       profiles: {
         Row: {
+          activity_level: string | null
+          age: number | null
           avatar_url: string | null
           created_at: string
           first_name: string
+          gender: string | null
+          height: number | null
           id: string
           last_name: string
+          weight: number | null
         }
         Insert: {
+          activity_level?: string | null
+          age?: number | null
           avatar_url?: string | null
           created_at?: string
           first_name: string
+          gender?: string | null
+          height?: number | null
           id: string
           last_name: string
+          weight?: number | null
         }
         Update: {
+          activity_level?: string | null
+          age?: number | null
           avatar_url?: string | null
           created_at?: string
           first_name?: string
+          gender?: string | null
+          height?: number | null
           id?: string
           last_name?: string
+          weight?: number | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "profiles_id_fkey"
+            columns: ["id"]
+            isOneToOne: true
+            referencedRelation: "users"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      users: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          password: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          password: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          password?: string
         }
         Relationships: []
       }

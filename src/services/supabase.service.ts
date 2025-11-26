@@ -15,3 +15,15 @@ if (!supabaseUrl || !supabaseAnonKey) {
 
 // 3. สร้าง Client (แบบรู้จัก Type ของเรา)
 export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey);
+
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+if (!supabaseServiceRoleKey) {
+  console.warn(
+    "SUPABASE_SERVICE_ROLE_KEY is missing. Admin operations will fail."
+  );
+}
+
+export const supabaseAdmin = supabaseServiceRoleKey
+  ? createClient<Database>(supabaseUrl, supabaseServiceRoleKey)
+  : supabase; // Fallback to anon key if service key is missing (though it will likely fail for admin tasks)

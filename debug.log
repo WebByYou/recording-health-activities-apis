@@ -1,0 +1,15 @@
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User not found or error: {"code":"PGRST116","details":"The result contains 0 rows","hint":null,"message":"Cannot coerce the result to a single JSON object"}
+User found: new-test@example.com
+Stored hash: $2b$10$tf0NNiqFD.YnonS2qkPoV.0Jqz1x4KOCm77PRiUhbNsGoReVAk3kC
+Input password: password123
+Password valid: true
+{"code":"23503","details":"Key (id)=(a2f01e4f-08c0-4422-8ca2-2a702a0b0d7a) is not present in table \"users\".","hint":null,"message":"insert or update on table \"profiles\" violates foreign key constraint \"profiles_id_fkey\""}
