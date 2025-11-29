@@ -2,6 +2,8 @@ import express, { Application } from "express";
 import dotenv from "dotenv";
 import authRouter from "./routes/auth.route";
 import userRouter from "./routes/user.route";
+import activityLevelRouter from "./routes/activityLevel.route";
+import cupRouter from "./routes/cup.route";
 import cors from "cors";
 import swaggerUi from "swagger-ui-express";
 import { swaggerSpec } from "./config/swagger";
@@ -29,6 +31,8 @@ app.use((req, res, next) => {
 
 app.use("/auth", authRouter);
 app.use("/user", userRouter);
+app.use("/activity-levels", activityLevelRouter);
+app.use("/cups", cupRouter);
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server running at:`);
